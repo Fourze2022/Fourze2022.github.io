@@ -1,0 +1,371 @@
+:root {
+  --primary-color: #0e0f0f;
+  --secondary-color: #181a1b;
+  --tertiary-color: #ee6483;
+  --quaternary-color: #ee81c3;
+  --text-color-1: #fdeef1;
+  --text-color-2: #fdeef17a;
+  --container-border: #383838;
+}
+
+* {
+  color: var(--text-color-1);
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.navbar-div {
+  width: 100%;
+  height: 80px;
+}
+
+.paragraph {
+  text-indent: 45px;
+}
+
+.line-spacing-small {
+  line-height: 6px;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-31 {
+  margin-top: 7.75rem;
+}
+
+.p-20 {
+  padding: 5rem;
+}
+
+.pr-20 {
+  padding-right: 5rem;
+}
+
+.pl-20 {
+  padding-left: 5rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pb-20 {
+  padding-bottom: 5rem;
+}
+
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.bg-primary-dark {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary-dark {
+  background-color: var(--secondary-color);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 10px;
+}
+
+.navbar-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+}
+
+.navbar-logo:hover {
+  border: 2px solid var(--quaternary-color);
+}
+
+.navbar-center {
+  text-align: center;
+}
+
+.navbar-center .nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+.navbar-right {
+  text-align: right;
+}
+
+.navbar-dark a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: var(--text-color-2);
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: var(--text-color-1);
+  text-decoration: underline;
+  text-decoration-color: var(--quaternary-color);
+  text-underline-offset: 10px;
+  text-decoration-thickness: 2px;
+}
+
+.button-contact {
+  border: 2px solid var(--text-color-2);
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  color: var(--text-color-2);
+}
+
+.button-contact:hover {
+  border-color: var(--quaternary-color);
+  color: var(--text-color-1);
+}
+
+.profile-picture {
+  width: 350px;
+  height: 350px;
+  border-radius: 100%;
+}
+
+.glow {
+  border: 4px solid var(--quaternary-color);
+  box-shadow: 0 0 65px 0 var(--quaternary-color);
+}
+
+.typing-gradient {
+  background-image: linear-gradient(
+    to right,
+    var(--text-color-1),
+    var(--tertiary-color)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-typewriter {
+  width: 500px;
+  overflow: hidden;
+}
+
+.container-typewriter .text {
+  position: relative;
+  color: var(--tertiary-color);
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.text.typing-text:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: var(--primary-color);
+  border-left: 2px solid var(--tertiary-color);
+  animation: animate 6s steps(16) infinite;
+}
+
+@keyframes animate {
+  40%,
+  60% {
+    left: calc(100% + 4px);
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+.wave {
+  animation-name: wave-animation;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  transform-origin: 70% 70%;
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  }
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.title-h1 {
+  text-align: center;
+  font-weight: bold;
+  background-image: linear-gradient(
+    to right,
+    var(--text-color-1),
+    var(--quaternary-color),
+    var(--tertiary-color)
+  );
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+.container-about {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--container-border);
+  border-radius: 25px;
+}
+
+.logo-education {
+  height: 250px;
+  display: block;
+  margin: auto;
+}
+
+.container-education {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.design-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  width: 80rem;
+}
+
+.timeline-content {
+  padding: 5rem;
+  background: var(--secondary-color);
+  border: 1px solid var(--container-border);
+  border-radius: 25px;
+}
+
+.timeline-component-left {
+  margin-right: 25px;
+  margin-bottom: 50px;
+}
+
+.timeline-component-right {
+  margin-left: 25px;
+  margin-bottom: 50px;
+}
+
+@media screen {
+  .timeline {
+    display: grid;
+    grid-template-columns: 1fr 3px 1fr;
+  }
+
+  .timeline-middle {
+    position: relative;
+    background-image: linear-gradient(
+      45deg,
+      var(--text-color-1),
+      var(--quaternary-color),
+      var(--tertiary-color)
+    );
+    width: 4px;
+    height: 100%;
+  }
+
+  .timeline-circle {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    background-image: linear-gradient(
+      45deg,
+      var(--text-color-1),
+      var(--quaternary-color),
+      var(--tertiary-color)
+    );
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+
+.logo-experience {
+  max-width: 100%;
+  width: fit-content;
+  height: auto;
+}
+
+.logo-contact {
+  width: auto;
+  height: 30px;
+}
+
+.text-contact:hover {
+  color: var(--quaternary-color);
+}
+
+label {
+  display: block;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: var(--primary-color);
+  border: 1px solid var(--container-border);
+}
+
+.button-submit {
+  width: 100%;
+  padding: 0.25rem 1rem;
+  font-weight: bold;
+  border: 1px solid var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  color: var(--text-color-1);
+}
+
+.button-submit:hover {
+  background-color: var(--text-color-1);
+  color: var(--tertiary-color);
+}
+
+label:has(+ input[required])::after,
+label:has(+ textarea[required])::after {
+  content: "*";
+  color: var(--tertiary-color);
+}
